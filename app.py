@@ -53,7 +53,7 @@ def vector_embedding():
         st.session_state.embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
         
         # Corrected Path to PDF Directory
-        pdf_directory = ".\pdf_downloads"
+        pdf_directory = "./pdf_downloads"
         
         # Check if directory exists
         if not os.path.exists(pdf_directory):
